@@ -34,7 +34,7 @@
       <div class="shell">
         <p class="eyebrow">Política de privacidad</p>
         <h1>Tus datos, explicados con precisión.</h1>
-        <p class="updated">Última actualización: 30 de septiembre de 2026</p>
+        <p class="updated">Última actualización: 19 de octubre de 2026</p>
       </div>
     </header>
 
@@ -60,7 +60,7 @@
           <h2>1 · Resumen</h2>
           <div class="summary-box">
             <strong>En una frase</strong>
-            Daylory guarda tu diario y preferencias en tu dispositivo. Solo comunica datos a servicios externos cuando una función lo necesita; la IA es opcional y exige tu consentimiento previo. No hay anuncios, venta de datos ni tracking publicitario.
+            Daylory guarda tu diario y preferencias en tu dispositivo y, si usas iCloud, en tu base de datos privada de iCloud, a la que Daylory no tiene acceso. Solo comunica datos a servicios externos cuando una función lo necesita; la IA es opcional y exige tu consentimiento previo. No hay anuncios, venta de datos ni tracking publicitario.
           </div>
           <p>Esta política se aplica a la app Daylory para iOS y a este sitio de información y soporte. Describe la versión beta disponible a la fecha indicada. Si las prácticas cambian, se actualizarán la app, las declaraciones de App Store y esta página.</p>
         </section>
@@ -78,14 +78,14 @@
           <h2>3 · Qué datos trata Daylory y para qué</h2>
           <div class="data-list">
             <div class="data-item">
-              <h3>Diario y preferencias en el dispositivo</h3>
+              <h3>Diario y preferencias en el dispositivo y en tu iCloud</h3>
               <p>Registros de comidas, cantidades, objetivos, recetas, alimentos personales, alias, correcciones, historial nutricional congelado y la elección sobre IA. Se usan para ofrecer el diario, cálculos, memoria personal, exportación y borrado.</p>
-              <p>En la beta actual estos datos permanecen en el almacenamiento local de la app. Daylory no tiene cuentas propias ni un servidor donde el desarrollador pueda leer tu diario.</p>
+              <p>Estos datos se guardan en el almacenamiento local de la app. Si has iniciado sesión en iCloud, la app los sincroniza mediante CloudKit en la base de datos privada de tu cuenta de iCloud, para que tus alimentos, alias, correcciones y registros te acompañen en tus dispositivos. Esa base de datos pertenece a tu cuenta: Daylory no tiene cuentas propias ni un servidor o panel desde el que el desarrollador pueda leer tu diario, tampoco el que está en iCloud. Sin sesión en iCloud, los datos se quedan solo en el dispositivo.</p>
             </div>
             <div class="data-item">
               <h3>Texto para estructuración con IA, solo si aceptas</h3>
               <p>La frase que escribes o dictas (solo el texto ya transcrito), el idioma, alternativas de transcripción y los nombres o alias de alimentos y recetas que pueden ayudar a identificarlos: los del catálogo de Daylory y, cuando ayudan, los nombres de tus alimentos personales y recetas. Los candidatos usan identificadores efímeros de esa petición y no incluyen calorías, macronutrientes ni identificadores persistentes de tu base local.</p>
-              <p>Las descripciones de comidas se estructuran con Google Gemini; el dictado de recetas, con OpenAI. OpenAI también puede recibir una descripción de comida como respaldo si Gemini no responde a tiempo o falla. La finalidad es separar alimentos, nombres y cantidades. La IA no calcula valores nutricionales. Puedes rechazar o retirar este permiso en Ajustes; el modo manual/local sigue disponible.</p>
+              <p>Las descripciones de comidas se estructuran con Google Gemini; el dictado de recetas, con OpenAI. OpenAI también puede recibir una descripción de comida como respaldo si Gemini no responde a tiempo o falla. La finalidad es separar alimentos, nombres y cantidades y, cuando no dices un peso concreto, estimar la ración. Si indicas el alimento y la cantidad exactos, las calorías y los macronutrientes salen de fuentes (el catálogo de Daylory, Open Food Facts o tus alimentos de Mi comida), no de la IA. Solo cuando describes un plato vago o compuesto (por ejemplo, «una paella») y esas fuentes no tienen un dato fiable, el proveedor de IA devuelve también una estimación de calorías y macronutrientes por 100 g; la app la comprueba y la muestra marcada como «estimado por IA». Puedes rechazar o retirar este permiso en Ajustes; el modo manual/local sigue disponible.</p>
             </div>
             <div class="data-item">
               <h3>Búsquedas y códigos de producto</h3>
@@ -111,23 +111,27 @@
             <li><strong>OpenAI:</strong> estructura el dictado opcional de recetas y, como respaldo, descripciones de comidas, con la API y con almacenamiento de respuesta desactivado. OpenAI indica que los datos de API no se usan para entrenar sus modelos salvo adhesión voluntaria; sus logs de prevención de abuso pueden conservar contenido hasta 30 días por defecto, salvo controles de retención distintos. Consulta sus <a href="https://developers.openai.com/api/docs/guides/your-data" rel="noreferrer">controles de datos de API</a> y su <a href="https://cdn.openai.com/pdf/openai-data-processing-addendum.pdf" rel="noreferrer">acuerdo de tratamiento</a>.</li>
             <li><strong>Open Food Facts:</strong> responde a búsquedas y códigos de productos. Puede recibir la consulta, el código, la dirección IP y datos técnicos normales de una conexión web. Consulta su <a href="https://world.openfoodfacts.org/privacy" rel="noreferrer">política de privacidad</a> y sus <a href="https://world.openfoodfacts.org/terms-of-use" rel="noreferrer">condiciones de reutilización</a>.</li>
             <li><strong>RevenueCat:</strong> gestiona de forma seudónima el estado de compras y suscripciones. Recibe información técnica, un ID aleatorio anónimo y datos de transacción o recibo. Consulta su <a href="https://www.revenuecat.com/privacy-policy" rel="noreferrer">política de privacidad</a> y su <a href="https://www.revenuecat.com/dpa" rel="noreferrer">acuerdo de tratamiento</a>.</li>
-            <li><strong>Apple:</strong> distribuye la app, procesa compras y ofrece los controles del sistema. Apple trata esos datos bajo sus propias condiciones; consulta <a href="https://www.apple.com/legal/privacy/data/es/app-store/" rel="noreferrer">App Store y privacidad</a>.</li>
+            <li><strong>Apple (iCloud / CloudKit):</strong> si usas iCloud, presta como encargado del tratamiento la infraestructura de almacenamiento y sincronización de tu diario. Los datos se guardan en la base de datos privada de tu cuenta de iCloud; Daylory no tiene acceso a ella. Puedes borrarlos desde Ajustes → Privacidad → Borrar todos mis datos o desde la gestión del almacenamiento de iCloud de tu dispositivo. Consulta la <a href="https://www.apple.com/es/legal/privacy/es/" rel="noreferrer">política de privacidad de Apple</a>.</li>
+            <li><strong>Apple (App Store):</strong> distribuye la app, procesa compras y ofrece los controles del sistema. Apple trata esos datos bajo sus propias condiciones; consulta <a href="https://www.apple.com/legal/privacy/data/es/app-store/" rel="noreferrer">App Store y privacidad</a>.</li>
             <li><strong>Google (Gmail):</strong> aloja el buzón usado cuando decides escribir a soporte o ejercer un derecho. Recibe la dirección, el mensaje y los adjuntos que envíes. Consulta la <a href="https://policies.google.com/privacy" rel="noreferrer">política de Google</a>.</li>
           </ul>
           <h3>Garantías para transferencias internacionales</h3>
           <p>Cloudflare, Google (Gemini API y Gmail), OpenAI y RevenueCat pueden tratar datos fuera del Espacio Económico Europeo, incluidos Estados Unidos. Para transferencias restringidas, Cloudflare declara el Marco de Privacidad de Datos UE–EE. UU. y cláusulas contractuales tipo de la Comisión Europea con medidas adicionales; OpenAI contrata con OpenAI Ireland para clientes del EEE y utiliza decisiones de adecuación o esas cláusulas; RevenueCat aplica las cláusulas contractuales tipo a transferencias sin adecuación; y Google, para la API de Gemini y para Gmail, declara decisiones de adecuación, el Marco de Privacidad de Datos UE–EE. UU. o cláusulas contractuales tipo según corresponda; en la API de Gemini esas garantías figuran en su acuerdo de tratamiento de datos para productos en los que Google actúa como encargado. Los documentos enlazados arriba describen cada garantía.</p>
-          <p>Apple actúa como responsable separado para App Store: los datos del EEE corresponden a Apple Distribution International en Irlanda y sus transferencias internacionales se rigen por cláusulas contractuales tipo. Open Food Facts es una asociación establecida en Francia; Daylory dirige allí la consulta al servicio público. Para este sitio, GitHub puede procesar datos técnicos globalmente y declara cláusulas contractuales tipo y el Marco de Privacidad de Datos en su <a href="https://docs.github.com/es/site-policy/privacy-policies/github-general-privacy-statement" rel="noreferrer">declaración de privacidad</a>.</p>
+          <p>Apple, para iCloud/CloudKit, puede almacenar y tratar los datos fuera del Espacio Económico Europeo, incluidos Estados Unidos; sus transferencias internacionales se rigen por cláusulas contractuales tipo de la Comisión Europea, según su política de privacidad. Apple actúa como responsable separado para App Store: los datos del EEE corresponden a Apple Distribution International en Irlanda y sus transferencias internacionales se rigen por cláusulas contractuales tipo. Open Food Facts es una asociación establecida en Francia; Daylory dirige allí la consulta al servicio público. Para este sitio, GitHub puede procesar datos técnicos globalmente y declara cláusulas contractuales tipo y el Marco de Privacidad de Datos en su <a href="https://docs.github.com/es/site-policy/privacy-policies/github-general-privacy-statement" rel="noreferrer">declaración de privacidad</a>.</p>
           <p>Puedes pedir una copia o más información sobre una garantía aplicable escribiendo al contacto de privacidad. También puedes obtenerla directamente en los acuerdos y políticas enlazados. Daylory reduce los datos enviados y mantiene disponible un modo local sin la IA de terceros.</p>
         </section>
 
         <section id="bases">
           <h2>5 · Bases jurídicas</h2>
           <ul>
-            <li><strong>Ejecución del servicio solicitado:</strong> almacenamiento local, consulta de productos, soporte de funciones y gestión de compras.</li>
+            <li><strong>Ejecución del servicio solicitado:</strong> almacenamiento local, sincronización con tu iCloud, consulta de productos, soporte de funciones y gestión de compras.</li>
             <li><strong>Consentimiento explícito:</strong> envío opcional de frases y nombres de alimentos a la cadena Cloudflare–Google (Gemini) y, para recetas o como respaldo, Cloudflare–OpenAI. Cuando el texto pueda revelar información relativa a la salud, el consentimiento cubre también ese tratamiento. Retirarlo impide futuros envíos.</li>
             <li><strong>Obligación legal:</strong> conservación de la información que resulte necesaria para obligaciones fiscales, contables, de consumo o atención de derechos.</li>
             <li><strong>Interés legítimo:</strong> seguridad básica del servicio, prevención de abuso y resolución de incidencias, ponderado frente a tus derechos.</li>
           </ul>
+          <h3>Datos relativos a la salud</h3>
+          <p>Lo que comes, tus cantidades y tus objetivos pueden revelar hábitos alimentarios o información relativa a la salud (categoría especial del artículo 9 del RGPD). Cuando esos datos salen de tu dispositivo hacia la IA, la base es tu <strong>consentimiento explícito</strong> (artículo 9.2.a). La app lo pide antes del primer envío, en la pantalla de permisos del inicio o en la hoja «Estructurar con IA», que explica qué se envía y a qué proveedores; solo se activa si pulsas «Activar y aceptar». Puedes negarte («Ahora no») o retirarlo en Ajustes → Privacidad → Retirar consentimiento de IA, y el modo manual sigue disponible. Tu diario en el dispositivo y en tu iCloud no lo recibe ni lo consulta Daylory.</p>
+          <p>No estás obligado a facilitar ningún dato. Sin consentimiento de IA puedes seguir registrando de forma manual; sin iCloud, tus datos se quedan solo en el dispositivo.</p>
           <p>Daylory no toma decisiones automatizadas con efectos jurídicos o similares sobre ti y no crea perfiles publicitarios.</p>
         </section>
 
@@ -135,6 +139,7 @@
           <h2>6 · Conservación, exportación y borrado</h2>
           <ul>
             <li><strong>Datos locales:</strong> permanecen hasta que uses Ajustes → Privacidad → Borrar todos mis datos o elimines la app. Daylory permite exportar los datos en JSON y el diario en CSV.</li>
+            <li><strong>Copia en iCloud:</strong> se conserva en tu base de datos privada de iCloud hasta que la borres. «Borrar todos mis datos» la elimina también de iCloud cuando el dispositivo se sincroniza; también puedes borrarla desde la gestión del almacenamiento de iCloud de tu dispositivo. Eliminar la app no borra la copia de iCloud.</li>
             <li><strong>Consentimiento de IA:</strong> se guarda localmente y se elimina con el borrado total. Desactivarlo detiene futuros envíos, aunque no borra de forma retroactiva logs que un proveedor deba conservar durante su plazo aplicable.</li>
             <li><strong>Worker propio:</strong> no conserva el contenido de la frase en sus logs de aplicación. Cloudflare conserva los logs técnicos de Workers durante un máximo de 7 días —3 días en el plan Free y 7 en planes Paid— y después los elimina de esa herramienta, según sus <a href="https://developers.cloudflare.com/workers/observability/logs/workers-logs/" rel="noreferrer">límites de retención</a>.</li>
             <li><strong>Google (Gemini API):</strong> en los servicios de pago registra peticiones y respuestas durante un periodo limitado, solo para detectar y prevenir abusos. Su documentación de <a href="https://ai.google.dev/gemini-api/docs/usage-policies" rel="noreferrer">control de abusos</a> indica actualmente 55 días, con acceso para revisión humana limitado a personal autorizado de Google. La caché implícita del servicio se mantiene solo en memoria y caduca a las 24 horas, según su página de <a href="https://ai.google.dev/gemini-api/docs/zdr" rel="noreferrer">retención de datos</a>.</li>
